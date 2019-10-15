@@ -1,0 +1,22 @@
+{
+  "name": "02-homework",
+  "version": "1.0.0",
+  "description": "friend finder homework- an app that will take in survey info and sugget a compatible friend for the user.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tlacy1000/friend-finder.git"
+  },
+  "author": "tlacy1000",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tlacy1000/friend-finder/issues"
+  },
+  "homepage": "https://github.com/tlacy1000/friend-finder#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
