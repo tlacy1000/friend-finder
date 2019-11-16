@@ -1,211 +1,207 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- bootstrap links -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <!-- bootswatch -->
-  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/united/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-WTtvlZJeRyCiKUtbQ88X1x9uHmKi0eHCbQ8irbzqSLkE0DpAZuixT5yFvgX0CjIu" crossorigin="anonymous">
-  <!-- jquery link -->
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <title>Friend Finder</title>
+    <meta charset="UTF-8">
+    <title>FriendFinder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
 
-<body style="margin: auto 2rem auto 2rem">
-  <h1>Survey Questions</h1>
-  <hr>
-  <form>
-    <div class="form-group">
-      <label>Name</label>
-      <input type="text" class="form-control" id="name" placeholder="Name" required>
-      <small class="form-text text-muted">Required</small>
-    </div>
-    <div class="form-group">
-      <label>Link to Photo Image</label>
-      <input type="text" class="form-control" id="photo" placeholder="Link" required>
-      <small class="form-text text-muted">Required</small>
+<body>
+    <div class="container content">
+        <div class="jumbotron">
+            <h1>Survey</h1>
+          
+            <form>
+                <div class="form-group">
+                    <input id="name" type="text" class="form-control" placeholder="Name (Required)">
+                </div>
+                <div class="form-group">
+                    <input id="photo" type="text" class="form-control" placeholder="Link to Profile Photo (Required)">
+                </div>
+                <div class="form-group">
+                    <label for="question1">I enjoy creative pursuits.</label>
+                    <select class="form-control" id="question1">
+                        <option value="empty"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question2">I experience emotions intensely.</label>
+                    <select class="form-control" id="question2">
+                        <option value="empty"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question3"> I enjoy scientific research.</label>
+                    <select class="form-control" id="question3">
+                        <option value="empty"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question4"> I am often the life of the party.</label>
+                    <select class="form-control" id="question4">
+                        <option value="empty"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question5">I dislike being the center of attention.</label>
+                    <select class="form-control" id="question5">
+                        <option value="empty"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question6"> I am generally an agreeable person.</label>
+                    <select class="form-control" id="question6">
+                        <option value="empty"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question7"> I have neurotic tendencies.</label>
+                    <select class="form-control" id="question7">
+                        <option value="empty"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question8"> I value law and order- following rules is important to me.</label>
+                    <select class="form-control" id="question8">
+                        <option value="empty"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question9">I see myself as extraverted and enthusiastic. </label>
+                    <select class="form-control" id="question9">
+                        <option value="empty"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question10"> I am generally open to new experiences.</label>
+                    <select class="form-control" id="question10">
+                        <option value="empty"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </form>
+            <div class="text-center">
+                <button id="submitBtn" type="submit" class="btn btn-success btn-lg">Submit</button>
+            </div>
+        </div>
+
+        <div id="bestFriendModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h3 class="modal-title">Your New Best Friend</h1>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="bestFriend"></h2>
+                        <img id="bestFriendPhoto" src="#">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="form-group">
-      <label for="exampleFormControlSelect1">I enjoy creative pursuits.</label>
-      <select class="form-control" id="exampleFormControlSelect1">
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="exampleFormControlSelect2">I experience emotions intensely.</label>
-      <select class="form-control" id="exampleFormControlSelect2">
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="exampleFormControlSelect3">I enjoy scientific research.</label>
-      <select class="form-control" id="exampleFormControlSelect3">
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="exampleFormControlSelect4">I am often the life of the party.</label>
-      <select class="form-control" id="exampleFormControlSelect4">
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="exampleFormControlSelect5">I dislike being the center of attention.</label>
-      <select class="form-control" id="exampleFormControlSelect5">
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="exampleFormControlSelect6">I am generally an agreeable person.</label>
-      <select class="form-control" id="exampleFormControlSelect6">
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="exampleFormControlSelect7">I have neurotic tendencies.</label>
-      <select class="form-control" id="exampleFormControlSelect7">
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="exampleFormControlSelect8"> I value law and order- following rules is important to me. </label>
-      <select class="form-control" id="exampleFormControlSelect8">
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="exampleFormControlSelect9"> I see myself as extraverted, enthusiastic</label>
-      <select class="form-control" id="exampleFormControlSelect9">
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="exampleFormControlSelect10"> I am generally open to new experiences. </label>
-      <select class="form-control" id="exampleFormControlSelect10">
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
-    </div>
-    <button type="button" data-toggle="modal" data-target="#results-modal" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button>
-  </form>
 
-  <ul class="nav" style="margin: auto 0">
-    <li class="nav-item">
-      <a class="nav-link" href="/home">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/api/friends">API Friendlist</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="https://github.com/tlacy1000/friend-finder/tree/master">GitHub Repo</a>
-    </li>
-  </ul>
-
-  <div class="modal" role="dialog" id="results-modal" data-target="#results-modal">
-    <!-- <div class="modal-dialog" role="document"> -->
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Best Match</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <h5 id="match-name">Best Match</h5>
-        <img id="match-img" src="">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-    <!-- </div> -->
-  </div>
-
-
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $("#submit").click(function (event) {
-        event.preventDefault();
-        var userData = {
-          name: $("#name").val(),
-          photo: $("#photo").val(),
-          scores: [
-            $("#exampleFormControlSelect1").val(), $("#exampleFormControlSelect2").val(),
-            $("#exampleFormControlSelect3").val(), $("#exampleFormControlSelect4").val(),
-            $("#exampleFormControlSelect5").val(), $("#exampleFormControlSelect6").val(),
-            $("#exampleFormControlSelect7").val(), $("#exampleFormControlSelect8").val(),
-            $("#exampleFormControlSelect9").val(), $("#exampleFormControlSelect10").val()
-          ]
-        };
-      
-        // vain attempts to prevent blank submissions
-        $.post("/api/friends", userData, function (data) {
-          var placeholder = $("#name").attr("placeholder");
-          if (userData.name === placeholder) {
-            $("#match-name").text("Please fill in the required field to continue.");
-          }else if(userData.photo === "Link"){
-            $("#match-name").text("Please fill in the required field to continue.");
-          } else{
-            $("#match-name").text(data.name);
-            $("#match-img").attr("src", data.photo);
-          }
-        })
-      })
-    });
-  </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
+
+<script type="text/javascript">
+	$("#submitBtn").on("click", function(event) {
+		event.preventDefault();
+		// Form validation
+		var valid = true;
+		if($("#name").val() === "" || $("#photo").val() === "") {
+			valid = false;
+		} else if($("#question1").val() === "empty" || $("#question2").val() === "empty" || $("#question3").val() === "empty" || $("#question4").val() === "empty" || $("#question5").val() === "empty" || $("#question6").val() === "empty" || $("#question7").val() === "empty" || $("#question8").val() === "empty" || $("#question9").val() === "empty" || $("#question10").val() === "empty") {
+			valid = false;
+		}
+		if(valid === true) {
+			var newUser = {
+				name: $("#name").val().trim(),
+				photo: $("#photo").val().trim(),
+				scores: [
+					$("#question1").val(),
+					$("#question2").val(),
+					$("#question3").val(),
+					$("#question4").val(),
+					$("#question5").val(),
+					$("#question6").val(),
+					$("#question7").val(),
+					$("#question8").val(),
+					$("#question9").val(),
+					$("#question10").val()
+				]
+			};
+			var currentURL = window.location.origin;
+			// Ajax call for receiving response after POST req
+			$.post(currentURL + "/api/friends", newUser, function(data) {
+				$("#bestFriend").text(data.name);
+				$("#bestFriendPhoto").attr("src", data.photo);
+				$("#bestFriendModal").modal("toggle");
+			});
+		} else {
+			// If a required field is missing, show alert
+			alert("Survey is incomplete!");
+		}
+	});
+</script>

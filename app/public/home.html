@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- bootstrap links -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-         <!-- bootswatch -->
-        <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/united/bootstrap.min.css" rel="stylesheet" integrity="sha384-WTtvlZJeRyCiKUtbQ88X1x9uHmKi0eHCbQ8irbzqSLkE0DpAZuixT5yFvgX0CjIu" crossorigin="anonymous">
-        <!-- jquery link -->
-        <script src="https://code.jquery.com/jquery.js"></script>
-   <title>FriendFinder</title>
-</head>
-<body>
-    <div class="jumbotron">
-        <h1 class="display-4">Friend Finder</h1>
-        <p class="lead">Please follow the link to fill out a short survey. This'll help us match you up with someone! :)</p>
-        <hr class="my-4">
-        <p>Based on your responses, we'll match you with someone we think you'd be compatible with!</p>
-        <a class="btn btn-primary btn-lg" href="/survey" role="button">Start Here</a>
-    </div>
+    <title>FriendFinder</title>
 
-    <ul class="nav" style="margin: auto 0">
-        <li class="nav-item">
-          <a class="nav-link" href="/api/friends">API Friendlist</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/tlacy1000/friend-finder/tree/master">GitHub Repo</a>
-        </li>
-    </ul>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/eb7e5c70a7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1><i class="fas fa-user-friends"></i> Friend Finder</h1>
+            <hr>
+            <h2>Answer a few basic questions and we'll find you a new best friend! </h2>
+            <br>
+            <div>
+                <a href="/survey"><button type="button" class="btn btn-lg btn-primary">
+                        <h4><i class="far fa-question-circle"></i> Go to Survey</h4>
+                    </button></a>
+            </div>
+        </div>
+
+       
+    </div>
 </body>
 </html>
