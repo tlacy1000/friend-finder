@@ -3,7 +3,8 @@ Friend-finder is an app that matches friends via compatibility survey using node
 
 
 #Demo
-Friend Finder is deployed to Heroku. Please check it out here.
+Friend Finder is deployed to Heroku. Please check it out here. 
+https://friend-finder11172019.herokuapp.com/
 
 #Installation
 To install the application follow the instructions below:
