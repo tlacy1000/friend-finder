@@ -20,8 +20,7 @@ The purpose of this project is to help users find a friend they'd be compatible 
 ​
 ## Technologies
 * Node.js
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
+
 ​
 ## Setup
 #Installation
@@ -43,20 +42,6 @@ The application will now be running locally on PORT, in this case that is port 3
 Friend Finder is deployed to Heroku. Please check it out here. 
 https://friend-finder11172019.herokuapp.com/
 
-## Code Examples
-Show examples of usage:
-`put-your-code-here`
-​
-## Features
-List of features ready and TODOs for future development
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
-​
-To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
-​
 ## Status
 Project is: Finished
 ​
