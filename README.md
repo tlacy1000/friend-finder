@@ -5,18 +5,12 @@ Friend-finder is an app that matches friends via compatibility survey using node
 ​
 ## Table of contents
 * [General info](#general-info)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
 * [Setup](#setup)
-* [Features](#features)
 * [Status](#status)
 * [Contact](#contact)
 ​
 ## General info
 The purpose of this project is to help users find a friend they'd be compatible with.
-​
-## Screenshots
-![Example screenshot](./img/screenshot.png)
 ​
 ## Technologies
 * Node.js
